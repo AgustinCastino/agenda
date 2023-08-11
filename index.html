@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tareas </title>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <p> ¡FILTRÁ POR CATEGORÍA! </p>
+
+        <div class="categorias">
+            <div>
+                <button class="itemCategoria"> Ver todo </button>
+            </div>
+        </div>
+
+        
+        <form id="formNuevaCategoria">
+            
+            <div class="containerInput">
+                <label for="nueveCategoria"> Nueva categoría </label>
+                <input id="nuevaCategoria" placeholder="Ingrese la categoría">
+            </div>
+
+            <button id="btnAgregarCategoria"> Agregar Categoría </button>
+        </form>
+        
+    </nav>
+
+    <main>
+
+        <h1>
+            AGENDALO
+        </h1>
+
+
+        <table id="tablaTareas">
+            
+        </table>
+
+        <form id="formNuevaTarea" class="">
+
+            <div class="containerInput">
+                <label for="opcionesCategorias"> Categoría </label>
+                <select id="opcionesCategorias" name="opcionesCategorias">
+                </select>
+            </div>
+
+            <div class="containerInput">
+                <label for="descripcion"> Descripción </label>
+                <input id="descripcion">
+            </div>
+
+            <div class="containerInput">
+                <label for="fecha"> Fecha </label>
+                <input id="fecha">
+            </div>
+
+            <div class="containerBtnAgregar">
+                <button> Agregar </button>
+            </div>
+        </form>
+
+        
+
+        <button id="mostrarFormTarea"> Agregar Tarea </button>
+
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>

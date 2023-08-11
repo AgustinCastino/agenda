@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* NAV */
+nav{
+    min-width: 20%;
+    max-width: 20%;
+    
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #A1CCD1;
+}
+
+nav p{
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 10px 0;
+}
+
+nav .categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+}
+
+nav .categorias div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    width: 100%;
+}
+
+nav .categorias .itemCategoria{
+    padding: 5px 5px;
+    margin: 5px 0;
+    width: 80%;
+    background: none;
+    border: 1px solid #F4F2DE;
+    border-radius: 5px;
+}
+
+nav .categorias .btnEliminarCategoria{
+    width: max-content;
+    height: max-content;
+
+    background: none;
+    border: none; 
+}
+
+#formNuevaCategoria{
+    display: block;
+    margin-top: 20px;
+}
+
+#formNuevaCategoria .containerInput{
+    display: flex;
+    flex-direction: column;
+}
+
+#formNuevaCategoria .containerInput input{
+    margin: 5px 0;
+}
+
+#nuevaCategoria{
+    padding: 5px 5px;
+
+    background: #F4F2DE;
+    
+    border: none;
+    border-radius: 5px;
+}
+
+#btnAgregarCategoria{
+    padding: 5px 5px;
+    margin: 5px 0;
+    width: 80%;
+    background: none;
+    border: 1px solid #F4F2DE;
+    border-radius: 5px;
+}
+
+/* FIN NAV */
+
+main{
+    width: 80%;
+    background-color:  #F4F2DE;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* TABLA */
+table{
+    margin: auto;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+
+    width: 70%;
+
+    border: 2px solid black;
+}
+
+table th{
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 10px 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    border: 2px solid black;
+}
+
+table td{
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 2px solid black;
+    
+}
+
+table td:last-child{
+    padding: 10px 10px;
+    border: none;
+}
+
+table td button{
+    border: none;
+    background: none; 
+}
+
+
+/* FIN TABLA */
+
+/* FORM TAREA */
+#formNuevaTarea{
+    width: 50%;
+    margin: auto;
+    display: none;
+}
+
+#formNuevaTarea .containerInput{
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#formNuevaTarea .containerInput input, #formNuevaTarea .containerInput select{
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+#formNuevaTarea .containerBtnAgregar{
+    margin-top: 10px;
+}
+
+#formNuevaTarea .containerBtnAgregar button{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#mostrarFormTarea{
+    display: block;
+    width: 25%;
+    margin: auto;
+    padding: 5px;
+}
+/* FIN FORM TAREA */
